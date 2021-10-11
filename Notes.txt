@@ -1,0 +1,27 @@
+API - interface to a server that has data or performs actions
+Postman helps in the management and development of APIs
+Installation notes
+    It has dark mode!!
+
+Working with APIs in Postman
+    When working with a specific API make sure to look at the docs
+    Collections - a list of requests, usually all connected to the API
+        After making a collection an API, add all the requests with the same API to to the collection
+    Variables - values such as the base url can be set as variables with a global or collection scope
+        Highlight the text to save in a variable and hit 'set as variable'
+        Variables are called using '{{variableNameHere}}'
+        To see pre-set postman variables, use {{$variableName}}
+            When the $ is typed in, a list of variables will appear to be selected
+    Make sure to save the requests after editing them
+
+Parameters
+    Query parameters - options that can be added to the request to get specific results
+        Can be required or optional depending on API
+    Path variables - a different way to send options
+        Usage is based on specific API
+
+When trying to post a json, js, html, xml, or text body, go to Body > raw > and select the specific format from the 'Text' dropdown
+    The format and information that needs to be sent depends on the API
+
+When using an access token for an API, it helps to add it as a variable
+    To add/edit variables go to the collection settings
