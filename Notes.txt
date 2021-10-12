@@ -12,6 +12,7 @@ Working with APIs in Postman
         Variables are called using '{{variableNameHere}}'
         To see pre-set postman variables, use {{$variableName}}
             When the $ is typed in, a list of variables will appear to be selected
+        Environment and global variables can also be added
     Make sure to save the requests after editing them
 
 Parameters
@@ -25,3 +26,14 @@ When trying to post a json, js, html, xml, or text body, go to Body > raw > and 
 
 When using an access token for an API, it helps to add it as a variable
     To add/edit variables go to the collection settings
+    To add token as a header go to the 'Authorization' tab
+
+View logs and traffic in the console
+
+To test the API and scripting, go to the 'Tests' tab
+    Scripting in JS, and snippits are provided
+    Adding code to 'Tests' allows postman to understand what's going on
+    All code for extracting/manipulating data goes here
+
+Tests in postman start with "pm.test()" and takes 2 parameters: the test name and a function to run for the test
+    Look at the snippets for specific syntax
