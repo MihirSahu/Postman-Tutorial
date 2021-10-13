@@ -37,3 +37,10 @@ To test the API and scripting, go to the 'Tests' tab
 
 Tests in postman start with "pm.test()" and takes 2 parameters: the test name and a function to run for the test
     Look at the snippets for specific syntax
+
+Collection runner - run entire collection at once
+    Go to the runner tab and drag and drop requests
+    To set a request to be run after the current request use "postman.setNextRequest('request name')"
+        To stop the process after the current request use null instead of 'request name'
+
+newman - a cli companion for postman
